@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    max-width: 100%;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+  
+  
+
+.dark{
+    max-width: 100%;
+    background-image: url(bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: 100vw 100vh;
+    position: absolute;
+    background-repeat: no-repeat;
+
+    
+    
+}
+
+.building{
+    max-width: 100%;
+    max-width: 100%;
+    height: 315px;
+    width: 421px;
+    background-image: url(home.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 482px;
+    bottom: 97px;
+}
+
+.track{
+    /* max-width: 100%; */
+    height: 60vh;
+    width: 800vw;
+    background-image: url(track1.png);
+    position: absolute;
+    background-repeat: repeat-x;
+    top: 86vh;
+    animation: carMove linear 15s infinite;
+}
+
+
+.ghost{
+    max-width: 100%;
+    height: 142px;
+    width: 307px;
+    background-image: url(ghost.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 98px;
+    bottom: 85px;
+    animation: shake linear 5s infinite;
+}
+
+.head img{
+    max-width: 100%;
+    width: 43px;
+    position: absolute;
+    top: -2px;
+    left: 40px;
+    animation: headAni linear 6s infinite;
+}
+
+/* .carJok{
+    height: 84px;
+    width: 355px;
+    background-image: url(jokercar.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 250px;
+    bottom: 105px;
+    animation: shake linear 5s infinite;
+} */
+
+
+
+.wheel1 img{
+    max-width: 100%;
+    width: 65px;
+    position: absolute;
+    top: 90px;
+    left: 19px;
+    animation: wheelRotation linear 0.5s infinite;
+}
+
+.wheel2 img{
+    max-width: 100%;
+    width: 65px;
+    position: absolute;
+    top: 85px;
+    left: 253px;
+    animation: wheelRotation linear 0.5s infinite;}
+
+ /* .bat img{
+    width: 97px;
+    height: 109px;
+    position: relative;
+    top: -190px;
+    left: 261px;
+}
+
+.silencer img{
+    width: 82px;
+    height: 20px;
+    position: relative;
+    top: -190px;
+    left: -44px;
+    opacity: 1;
+    animation: silence 7s linear infinite;
+
+}
+
+.jwheel1 img{
+    width: 59px;
+    position: relative;
+    top: 36px;
+    left: 38px;
+    animation: wheelRotation linear 0.6s infinite;
+
+}
+.jwheel2 img{
+    width: 59px;
+    position: relative;
+    top: -26px;
+    left: 263px;
+    animation: wheelRotation linear 0.6s infinite;
+}
+
+.reflection img{ 
+    width: 387px;
+    height: 20px;
+    position: relative;
+    top: -43px;
+    left: -24px;
+    opacity: 1;
+    animation: reflect 2s linear infinite;
+} */
+
+
+@keyframes wheelRotation
+{   
+     100%{
+        transform: rotate(360deg);
+     }
+}
+
+@keyframes carMove
+{   
+     100%{
+        transform: translateX(-500vw);
+     }
+}
+
+@keyframes shake
+{ 
+    0%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
+
+ /* @keyframes reflect
+{
+    0%{ 
+        opacity: 0;
+
+    }
+    50%{
+        opacity: 1;
+
+    }
+    100%{
+        opacity: 0;
+
+    }
+
+} */
+
+@keyframes headAni
+{
+    
+    0%{ 
+        opacity: 0.5;
+
+    }
+    50%{
+        opacity: 1;
+        
+
+    }
+    100%{
+        opacity: 0.5;
+
+    }
+
+}
+
