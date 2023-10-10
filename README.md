@@ -1,5 +1,4 @@
-# Animation-html-css
-**Ghost rider**
+# GhostRider-animation-html-css
 
 This animation is made using pure Html/css.<br>
 
